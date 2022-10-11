@@ -55,10 +55,10 @@ class Chef extends Person {
     usesTheStove() { console.log("Ohhh, watch out. That's hot"); }
 }
 
-const postalWorkerOne = new PostalWorker("Stevens", 60, "Man");
-const postalWorkerTwo = new PostalWorker("Williams", 34, "Woman");
-const chefOne = new Chef("Tamia", 40, "Woman");
-const chefTwo = new Chef("Juliette", 25, "Woman");
+const postalWorkerOne = new PostalWorker("Stevens", 60, "Male");
+const postalWorkerTwo = new PostalWorker("Williams", 34, "Female");
+const chefOne = new Chef("Tamia", 40, "Female");
+const chefTwo = new Chef("Juliette", 25, "Female");
 
 console.log(postalWorkerOne);
 console.log(postalWorkerTwo);
