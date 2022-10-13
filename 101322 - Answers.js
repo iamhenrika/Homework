@@ -172,17 +172,16 @@ console.log(favMovies.unshift()) //It returns "18"
 splice"Django Unchained" and add "Avatar"(try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array ?
 
 
-    slice the last half of the array(challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array ?
+slice the last half of the array(challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array?
 
 
-        store the value of your slice in a variable, console.log it - Thought question: what is going on here ?
-            console.log your final results
+store the value of your slice in a variable, console.log it - Thought question: what is going on here?
+console.log your final results
 
 After running the above tasks, console.log the index of "Fast and Furious" - We removed it from the array, what value do we get when we look for the index of something that is not in the array ?
 
 
-
-    Thought question: that we declared the variable favMovies with const, and yet, we were allowed to change the array.Weird?Should we have used let?
+Thought question: that we declared the variable favMovies with const, and yet, we were allowed to change the array.Weird?Should we have used let?
 
 // 🔴 The commit message should read:
 // "Methods Revisited answered"
@@ -198,7 +197,7 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
 ];
 // Remove Eggbert (hint look at the slice/splice method(s))
 
-whereIsWaldo.splice(1,1) 
+whereIsWaldo.splice(1, 1)
 
 // Change "Neff" to "No One"
 
@@ -212,8 +211,15 @@ console.log(whereIsWaldo[2][1][1]);
 // "Where is Waldo answered"
 
 
+///////////////////////////////////////////////////////////////////////////
 // Excited Kitten
+///////////////////////////////////////////////////////////////////////////
 // Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+
+for (i = 0; i <= 20; i++) {
+    console.log("Love me, pet me! HSSSSSS!");
+}
+
 // For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
 // Hint 1
 // Hint 2
@@ -225,18 +231,28 @@ console.log(whereIsWaldo[2][1][1]);
 
 // 🔴 The commit message should read:
 // "Excited Kittens answered"
+
+/////////////////////////////////////////////////////////////////////////////////////////////
 // Find the Median
+/////////////////////////////////////////////////////////////////////////////////////////////
 // Find the median number in the following numsarray, then console.log that number.
 // hint if you check the length of the array / 2, you might get not get a whole number. In which case, look into Math.floor( // something )
-// const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
 
 // Expected output:
 // => 15
 // 🔴 The commit message should read:
 // "Find the Median answered"
-// Hungry for More?
-// Choose one that you didn't get to solve in lab
 
+nums.sort()
+const median = Math.floor(nums.length/2)
+console.log(nums[median]);
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Hungry for More?
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Choose one that you didn't get to solve in lab
 // Fibonnacci (morning lab)
 // Checkerboard (morning lab)
 // TwoDArray (afternoon lab)
