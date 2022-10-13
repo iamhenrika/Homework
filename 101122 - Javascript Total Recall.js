@@ -465,31 +465,38 @@ IV. Functions
         }
         console.log(maxOfThree(6, 9, 1));
 
-Did you use Google and find Math.max()? If so, great job! Very resourceful—keep looking stuff up! However, for this particular question, we need you to submit a solution that does not use Math.max().
+    Did you use Google and find Math.max()? If so, great job! Very resourceful—keep looking stuff up! However, for this particular question, we need you to submit a solution that does not use Math.max().
  
+    H. printLongestWord
+    Write a function printLongestWord that accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
  
+    console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+    => "Peanutbutter"
  
+        function printLongestWord(arr){
+        let longest = []
+        for (i = 1; i < arr.length; i++){
+            if (arr[i].length > longest.length){
+                longest = arr[i]
+            }
+        }
+            return longest
+        }
+        console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
  
-H. printLongestWord
-Write a function printLongestWordthat accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
- 
-console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
-=> "Peanutbutter"
- 
- 
- 
- 
-Objects
-Let's set up an object data structure. Let's say we have a website that sells products, and we have a user of our website, and we want to store that user's data. The object data structure is a good way to organize the data from our user.
- 
- 
- 
- 
-A. Make a user object
-Create an object called user.
-Write in to the object the key-value pairs for name, email, age, and purchased. Set the value of purchasedto an empty array []. Set the other values to whatever you would like.
- 
- 
+    Objects
+    Let's set up an object data structure. Let's say we have a website that sells products, and we have a user of our website, and we want to store that user's data. The object data structure is a good way to organize the data from our user.
+            
+    A. Make a user object
+    Create an object called user.
+    Write in to the object the key-value pairs for name, email, age, and purchased. Set the value of purchasedto an empty array []. Set the other values to whatever you would like.
+    
+        const user = {
+            name: 'Amber',
+            email: 'amberrockwell@gmail.com',
+            age: 34,
+            purchased: []
+        }
  
 B. Update the user
 Our user has changed his or her email address. Without changing the original userobject, update the emailvalue to a new email address.
