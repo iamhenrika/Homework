@@ -43,15 +43,23 @@ for (i = 1; i <= 20; i++){
 // 🔴 The commit message should read:
 // "Easy Going answered"
 
-
-
+////////////////////////////////////////////////////////////////////////////////////////////
 // Get Even
-// Write a for loop that will log only the even numbers in 0 through 200.
+/////////////////////////////////////////////////////////////////////////////////////////////
 
+// Write a for loop that will log only the even numbers in 0 through 200.
 // Hint: Think about the increment expression.
+
+for (i = 0; i <= 200; i++){
+    if (i % 2 == 0){
+        console.log(i);
+    }
+}
 
 // 🔴 The commit message should read:
 // "Get Even answered"
+
+
 // Fizz Buzz
 // This is a classic problem that you should get really comfortable solving. If you've solved it before, try to make it more elegant and short.
 
