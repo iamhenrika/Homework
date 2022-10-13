@@ -1,4 +1,4 @@
-/* A. Q + A
+/*A. Q + A
     1. How do we assign a value to a variable?
         =, the assignment operator
 
@@ -19,9 +19,8 @@
     6. What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it? 
         thinking - 80%
         solving - 20%        
-*/
 
-/* B. Strings
+    B. Strings
 
     For all other questions that involve writing code, you can solve them via the following instructions.
 
@@ -54,10 +53,10 @@
         const yourName = "Henrika Smith";
         const str = "Hello, my name is " + yourName + ".";
         console.log(str)
-    */
 
 
-/*  C. Booleans
+
+    C. Booleans
         Using the provided variable definitions, replace the blanks so that all log statements print true in the console. Answers should be all be valid JS syntax and not weird things that don't make sense but happen to print true to the console
         const a = 4;
         const b = 53;
@@ -75,9 +74,10 @@
         console.log(e === 'Kevin');
         console.log(a + b === c); // note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
         console.log(a * a === d); // note: the answer is a simple arithmetic equation, not something "weird"
-        console.log(48 == '48');*/
+        console.log(48 == '48');
 
-/* D. The farm
+
+    D. The farm
     Declare a variable animal. Set it to be either "cow" or something else
     Write code that will print out "mooooo" if the it is equal to cow
     Change your code so that if the variable animal is anything other than a cow, it will print "Hey! You're not a cow."
@@ -92,7 +92,7 @@
         }
         console.log(animal)
  
-E. Driver's Ed
+    E. Driver's Ed
     Make a variable that holds a person's age; be semantic
     Write code that will print out "Here are the keys!", if the age is 16 years or older, or, if the age is younger than 16, a message should print "Sorry, you're too young."
  
@@ -104,7 +104,7 @@ E. Driver's Ed
     }
         console.log(age);
  
- 
+
 II. Loops
     Remember: USE let when you initialize your for loops!
     This is GOOD: for(let i = 0; i < 100; i++)
@@ -189,8 +189,8 @@ II. Loops
             (bank_account_bonus += i * 2)
         }
             console.log(bank_account_bonus);
-    
- 
+ */
+/*   
 III. Arrays & Control flow
     A. Talk about it:
         What are the things in an array called?
@@ -287,57 +287,89 @@ F. Biggie Smalls
             console.log(number);
  
 G. Monkey in the Middle
-    Write an if ... else if ... elsestatement:
- 
-console.log()little numberif the number entered is less than 5.
-If the number entered is more than 10, log big number.
-Otherwise, log "monkey".
- 
- 
- 
+    Write an if ... else if ... else statement: console.log()little number if the number entered is less than 5.
+    If the number entered is more than 10, log big number.
+    Otherwise, log "monkey".
+
+        let number = 8;
+        if (number < 5) {
+        console.log("little number");
+        } else if (number > 10) {
+        console.log("big number");
+        } else {
+        console.log("monkey");
+        }
+
 H. What's in Your Closet?
-Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript.
+    Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript.
  
-const kristynsCloset = [
-  "left shoe",
-  "cowboy boots",
-  "right sock",
-  "GA hoodie",
-  "green pants",
-  "yellow knit hat",
-  "marshmallow peeps"
-];
+    const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+    ];
  
 // Thom's closet is more complicated. Check out this nested data structure!!
-const thomsCloset = [
-  [
-    // These are Thom's shirts
-    "grey button-up",
-    "dark grey button-up",
-    "light blue button-up",
-    "blue button-up",
-  ],[
-    // These are Thom's pants
-    "grey jeans",
-    "jeans",
-    "PJs"
-  ],[
-    // Thom's accessories
-    "wool mittens",
-    "wool scarf",
-    "raybans"
-  ]
-];
-What's Kristyn wearing today? Using bracket notation to access items in kristynsCloset, log the sentence "Kristyn is rocking that " + the third item in Kristyn's closet + " today!" to the console.
-Kristyn just bought some sweet shades! Add "raybans"to her closet after "yellow knit hat".
-Kristyn spilled coffee on her hat... modify this item to read "stained knit hat"instead of yellow.
-Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirtsarray.
-In the same way, access one item from Thom's pants array.
-Access one item from Thom's accessories array.
-Log a sentence about what Thom's wearing. Example: "Thom is looking fierce in a grey button-up, jeans and wool scarf!"
-Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
+    
+    const thomsCloset = [
+    [ // These are Thom's shirts
+        "grey button-up",
+        "dark grey button-up",
+        "light blue button-up",
+        "blue button-up",
+    ],
+    [ // These are Thom's pants
+        "grey jeans",
+        "jeans",
+        "PJs"
+    ],[ // Thom's accessories
+        "wool mittens",
+        "wool scarf",
+        "raybans"
+    ]
+    ];
+
+    What's Kristyn wearing today? Using bracket notation to access items in kristynsCloset, log the sentence "Kristyn is rocking that " + the third item in Kristyn's closet + " today!" to the console.
+
+        console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!");
+
+    Kristyn just bought some sweet shades! Add "raybans"to her closet after "yellow knit hat".
+
+        kristynsCloset.splice(6, 0, "raybans")
+        console.log(kristynsCloset)
+
+    Kristyn spilled coffee on her hat... modify this item to read "stained knit hat" instead of yellow.
+
+        kristynsCloset[5] = "stained knit hat";
+        console.log(kristynsCloset)
+
+    Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirtsarray.
+
+        let thomShirt = thomsCloset[0][0];
+        console.log(thomShirt);
+
+    In the same way, access one item from Thom's pants array.
+
+        let thomPants = thomsCloset[1][1];
+        console.log(thomPants)
+
+    Access one item from Thom's accessories array.
+
+        let thomAcc = thomsCloset[2][0];
+        console.log(thomAcc);
+
+    Log a sentence about what Thom's wearing. Example: "Thom is looking fierce in a grey button-up, jeans and wool scarf!"
+
+        console.log(`Thom is looking fierce in a ${thomsCloset[0][0]}, ${thomsCloset[1][1]} and ${thomsCloset[2][1]}!`);
+
+    Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
  
- 
+        thomsCloset[1].splice(2, 1, 'Footie Pajamas');
+        console.log(thomsCloset);
  
 IV. Functions
  
@@ -379,7 +411,16 @@ Write a function isVowelthat takes a character (i.e. a string of length 1) and r
 console.log(isVowel("a"));
 => true
  
- 
+ function isVowel(character){
+    character.toLowerCase()
+    const vowels = ['a','e','i','o','u'];
+    for(let i = 0; i<vowels.length; i++){
+        return vowels[i] === character.toLowerCase();
+    }
+}
+
+console.log(isVowel('f'))
+
  
  
 E. getTwoLengths
@@ -555,9 +596,6 @@ Result:
  
  
 This is to demonstrate that a function can return an object
- 
- 
- 
  
  
 4. Cat brain bender
