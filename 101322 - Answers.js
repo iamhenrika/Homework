@@ -91,25 +91,25 @@ for (let i = 1; i <= 100; i++) {
 
 const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
 const sharky = ["Sharky", "shark", 20, "Left Coast"]
-const plantee = ["Plantee", "plant",  5000 , "Mordor"]
+const plantee = ["Plantee", "plant", 5000, "Mordor"]
 const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
-const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
+const dart = ["D'Art", "Demogorgan Dog", 2, "Upside Down"]
 
 // Plantee just had her birthday; change Plantee's array to reflect her being a year older.
 
-    plantee[2] = 5001
+plantee[2] = 5001
 
 // Change Wolfy's hometown from "Yukon Territory" to "Gotham City".
 
-    wolfy[3] = "Gotham City"
+wolfy[3] = "Gotham City"
 
 // Give D'Art a second hometown by adding "Hawkins"
 
-    dart.push("Hawkins")
+dart.push("Hawkins")
 
 // Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfyarray and replace it with "Gameboy".
 
-    wolfy.splice(0, 1, "Gameboy")
+wolfy.splice(0, 1, "Gameboy")
 
 // 🔴 The commit message should read:
 // "Wild Wild Life answered"
@@ -121,48 +121,97 @@ const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
 // Use a for of loop(not a typo - try it out! Try a for ofloop) to call toUpperCase() on each of them and print out the result.
 // As a developer, you'll be a lifelong learner and constantly encountering new things. We'll give you little stretches like this to get you used to looking at documentation and figuring some things out on your own. You've got this!
 
-    const ninja = ["Donatello", "Leonardo","Raphael","Michaelangelo"]
-    for (const turtles of ninja){
-        console.log(turtles.toUpperCase());
-    }
+const ninja = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
+for (const turtles of ninja) {
+    console.log(turtles.toUpperCase());
+}
 
 // 🔴 The commit message should read:
 // "Yell at the Ninja Turtles answered"
 
 
+/////////////////////////////////////////////////////////////////////////////////////
 // Methods, Revisited
-// Here is a list of favMovies:
-    
-// const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+///////////////////////////////////////////////////////////////////////////////////// 
+//Here is a list of favMovies:
+
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 // Console log: the index of Titanic
+
+console.log(favMovies.indexOf("Titanic"))
+
+//Not weird. We cannot change the value of a variable declared with const but we can change its contents. 
 // Do the following and console.log the final results (I have included some thought questions, you don't have to write out an answer for those marked as such):
 // Note: if you have to add to the array, feel free to add any movie you'd like
-
 // use the .sortmethod Thought question: what did this do to the array? Did it permanently alter it?
+
+console.log(favMovies.sort())
+//This method rearranged them to ascending alphabetical order
+
 // Use the method pop
-// push"Guardians of the Galaxy"
+
+console.log(favMovies.pop())
+
+// push"Guardians of the Galaxy"    
+
+console.log(favMovies.push("Guardians of the Galaxy"))
+
 // Reverse the array
-// Use the shiftmethod
+
+console.log(favMovies.reverse())
+
+// Use the shift method
+
+console.log(favMovies.shift())
+
 // unshift- what does it return?
-// splice"Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
-// slicethe last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array?
-// store the value of your slicein a variable, console.log it - Thought question: what is going on here?
-// console.log your final results
-// After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array?
-// Thought question: that we declared the variable favMovieswith const, and yet, we were allowed to change the array. Weird? Should we have used let?
+
+console.log(favMovies.unshift()) //It returns "18"
+
+
+splice"Django Unchained" and add "Avatar"(try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array ?
+
+
+    slice the last half of the array(challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array ?
+
+
+        store the value of your slice in a variable, console.log it - Thought question: what is going on here ?
+            console.log your final results
+
+After running the above tasks, console.log the index of "Fast and Furious" - We removed it from the array, what value do we get when we look for the index of something that is not in the array ?
+
+
+
+    Thought question: that we declared the variable favMovies with const, and yet, we were allowed to change the array.Weird?Should we have used let?
 
 // 🔴 The commit message should read:
 // "Methods Revisited answered"
+
+
+//////////////////////////////////////////////////////////////////////////////////
 // Where is Waldo
+//////////////////////////////////////////////////////////////////////////////////
 // With the following multi-dimensional array
-// const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
-//                     ["Lucinda", "Jacc", "Neff", "Snoop"],
-//                     ["Petunia", ["Baked Goods", "Waldo"]]];
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+["Lucinda", "Jacc", "Neff", "Snoop"],
+["Petunia", ["Baked Goods", "Waldo"]]
+];
 // Remove Eggbert (hint look at the slice/splice method(s))
+
+whereIsWaldo.splice(1,1) 
+
 // Change "Neff" to "No One"
+
+whereIsWaldo[2].splice(2, 1, "No One")
+
 // Access and console.log "Waldo"
+
+console.log(whereIsWaldo[2][1][1]);
+
 // 🔴 The commit message should read:
 // "Where is Waldo answered"
+
+
 // Excited Kitten
 // Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
 // For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
