@@ -1,5 +1,7 @@
 // Part I: HTML & CSS
-// Prepare yourself for tomorrow's morning exercise! Watch the following videos on HTML and CSS. You will be working on practicing CSS in your Morning Exercise.
+// Prepare yourself for tomorrow's morning exercise!
+// Watch the following videos on HTML and CSS.
+// You will be working on practicing CSS in your Morning Exercise.
 
 // Rank you comfort with the following material on a scale of 0 - 5:
 
@@ -28,10 +30,21 @@
 // CSS Basics (colors, background, font properties)
 
 // Part II: JavaScript Reps
+////////////////////////////////////////////////////////////////////////////////////////////
 // Easy Going
+////////////////////////////////////////////////////////////////////////////////////////////
+
 // Write a for loop that will log the numbers 1 through 20.
+
+for (i = 1; i <= 20; i++){
+    console.log(i);
+}
+
 // 🔴 The commit message should read:
 // "Easy Going answered"
+
+
+
 // Get Even
 // Write a for loop that will log only the even numbers in 0 through 200.
 
