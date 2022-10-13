@@ -373,80 +373,98 @@ H. What's in Your Closet?
  
 IV. Functions
  
+    A. printGreeting
+    Do you think you could write a function called printGreeting with a parameter name that returns a greeting with the argument interpolated into the greeting?
  
-A. printGreeting
-Do you think you could write a function called printGreetingwith a parameter namethat returns a greeting with the argument interpolated into the greeting?
+    Like so?
  
-Like so?
+    console.log(printGreeting("Slimer"));
+    => Hello there, Slimer!
  
-console.log(printGreeting("Slimer"));
-=> Hello there, Slimer!
- 
-You think you could? I think so too. Feel free to skip this problem, because you've already done it. If you've done the problem twice, read entire problems carefully before doing them from now on.
- 
+    You think you could? I think so too. Feel free to skip this problem, because you've already done it. If you've done the problem twice, read entire problems carefully before doing them from now on.
  
  
+    B. printCool
+    Write a function printCool that accepts one parameter, nameas an argument. The function should print the name and a message saying that that person is cool.
  
-B. printCool
-Write a function printCoolthat accepts one parameter, nameas an argument. The function should print the name and a message saying that that person is cool.
+    console.log(printCool("Captain Reynolds"));
+    => "Captain Reynolds is cool";
  
-console.log(printCool("Captain Reynolds"));
-=> "Captain Reynolds is cool";
- 
- 
- 
- 
-C. calculateCube
-Write a function calculateCubethat takes a single number and prints the volume of a cube made from that number.
- 
-console.log(calculateCube(5));
-=> 125
- 
- 
- 
- 
-D. isVowel
-Write a function isVowelthat takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case. Test your function on every vowel and make sure it's working. In general, when you write functions, take a minute to test them with different values to make sure they behave the way you want.
- 
-console.log(isVowel("a"));
-=> true
- 
- function isVowel(character){
-    character.toLowerCase()
-    const vowels = ['a','e','i','o','u'];
-    for(let i = 0; i<vowels.length; i++){
-        return vowels[i] === character.toLowerCase();
-    }
-}
+        function printCool(name) {
+            console.log(name + " is cool.");
+        }
+        printCool("Steve Rogers");
 
-console.log(isVowel('f'))
 
+    C. calculateCube
+    Write a function calculateCubethat takes a single number and prints the volume of a cube made from that number.
  
+    console.log(calculateCube(5));
+    => 125
+            const calculateCube = (num) => {
+                return num * num * num
+            };
+            
+            console.log(calculateCube(5))
  
-E. getTwoLengths
-Write a function getTwoLengthsthat accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
+    D. isVowel
+    Write a function isVowelthat takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case. Test your function on every vowel and make sure it's working. In general, when you write functions, take a minute to test them with different values to make sure they behave the way you want.
  
-console.log(getTwoLengths("Hank", "Hippopopalous"));
-=> [4, 13]
+    console.log(isVowel("a"));
+    => true
  
+        function isVowel(character){
+            character.toLowerCase()
+                const vowels = ['a','e','i','o','u'];
+            for(let i = 0; i<vowels.length; i++){
+                return vowels[i] === character.toLowerCase();
+            }
+        }   
+        console.log(isVowel('f'))
+
+    E. getTwoLengths
+    Write a function getTwoLengthsthat accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
  
+    console.log(getTwoLengths("Hank", "Hippopopalous"));
+    => [4, 13]
  
+        const getTwoLengths = (strOne, strTwo) => [strOne.length, strTwo.length]
+        console.log(getTwoLengths('Hank','Hippopopalous'));
+
+    F. getMultipleLengths
+    Write a function getMultipleLengths that accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
  
-F. getMultipleLengths
-Write a function getMultipleLengthsthat accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
+    console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+    => [5, 4, 2, 2, 4]
  
-console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
-=> [5, 4, 2, 2, 4]
+        const getMultipleLengths = (arr) => {
+        let newArray = [];
+            arr.forEach((element) => {
+            newArray.push(element.length);
+        });
+            return newArray;
+        };
+        console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]))
  
+    G. maxOfThree
+    Define a function maxOfThreethat takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned. Be sure to test it with larger values in each of the three locations.
+    
+    console.log(maxOfThree(6, 9, 1));
+    => 9
  
- 
- 
-G. maxOfThree
-Define a function maxOfThreethat takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned. Be sure to test it with larger values in each of the three locations.
- 
-console.log(maxOfThree(6, 9, 1));
-=> 9
- 
+        function maxOfThree(num1,num2,num3){
+            if (num1 == num2 == num3){
+                return num1 || num2 || num3
+            }else if (num1 > num2 && num1 > num3){
+                return num1
+            }else if (num2 > num1 && num2 > num3){
+                return num2
+            }else if (num3 > num1 && num3 > num2){
+                return num3
+            }
+        }
+        console.log(maxOfThree(6, 9, 1));
+
 Did you use Google and find Math.max()? If so, great job! Very resourceful—keep looking stuff up! However, for this particular question, we need you to submit a solution that does not use Math.max().
  
  
