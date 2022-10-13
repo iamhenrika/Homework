@@ -118,14 +118,21 @@ const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
 // Yell at the Ninja Turtles
 ///////////////////////////////////////////////////////////////////////////////////////
 // Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
-// Use a for of loop(not a typo - try it out! Try a for ofloop) to call toUpperCase()on each of them and print out the result.
+// Use a for of loop(not a typo - try it out! Try a for ofloop) to call toUpperCase() on each of them and print out the result.
 // As a developer, you'll be a lifelong learner and constantly encountering new things. We'll give you little stretches like this to get you used to looking at documentation and figuring some things out on your own. You've got this!
+
+    const ninja = ["Donatello", "Leonardo","Raphael","Michaelangelo"]
+    for (const turtles of ninja){
+        console.log(turtles.toUpperCase());
+    }
 
 // 🔴 The commit message should read:
 // "Yell at the Ninja Turtles answered"
+
+
 // Methods, Revisited
 // Here is a list of favMovies:
-
+    
 // const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 // Console log: the index of Titanic
 // Do the following and console.log the final results (I have included some thought questions, you don't have to write out an answer for those marked as such):
