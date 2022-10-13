@@ -221,13 +221,6 @@ for (i = 0; i <= 20; i++) {
 }
 
 // For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
-// Hint 1
-// Hint 2
-// Hint 3
-// Hint 4
-// Hint 5
-// Hint 6
-// Image of cat with funny quote about dot
 
 // 🔴 The commit message should read:
 // "Excited Kittens answered"
@@ -258,6 +251,7 @@ console.log(nums[median]);
 // TwoDArray (afternoon lab)
 // Finish all 3 Lab Questions
 // Return of the Closets
+
 // Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript. Use this data to answer the following questions.
 
 // const kristynsCloset = [
