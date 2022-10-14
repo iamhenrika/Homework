@@ -172,19 +172,19 @@ timmy.exercise(2);
 class Dinner {
     constructor(appetizer, entree, dessert) {
         this.appetizer = appetizer,
-        this.entree = entree,
-        this.dessert = dessert
+            this.entree = entree,
+            this.dessert = dessert
     }
 }
 
 class Chef {
     cook(appetizer, entree, dessert) {
-let newDinner = new Dinner(appetizer, entree, dessert)
+        let newDinner = new Dinner(appetizer, entree, dessert)
         console.log(newDinner)
     }
 }
 
-const chefOne = new Chef ('Henrika')
+const chefOne = new Chef('Henrika')
 
 chefOne.cook('Vegetable Patter', 'Summer Salad', 'Vegan Cheesecake');
 chefOne.cook('Guacamole and Chips', 'Paella', 'Flan');
