@@ -31,20 +31,20 @@ Links to an external site. */
 
 class Hamster {
     constructor(name) {
-      this.owner = "";
-      this.name = name;
-      this.price = 15;
+        this.owner = "";
+        this.name = name;
+        this.price = 15;
     }
     wheelRun() {
-      console.log("squeak squeak");
+        console.log("squeak squeak");
     }
     eatFood() {
-      console.log("nibble nibble");
+        console.log("nibble nibble");
     }
     getPrice() {
-      return this.price;
+        return this.price;
     }
-  }
+}
 
 // 🔴 Hard Mode Save & Commit your work!
 // Your commit message should read something like:
@@ -73,56 +73,89 @@ class Hamster {
 
 class Person {
     constructor(name) {
-      this.name = name;
-      this.age = 0;
-      this.height = 0;
-      this.weight = 0;
-      this.mood = 0;
-      this.hamsters = [];
-      this.bankAccount = 0;
+        this.name = name;
+        this.age = 0;
+        this.height = 0;
+        this.weight = 0;
+        this.mood = 0;
+        this.hamsters = [];
+        this.bankAccount = 0;
     }
     getName() {
-      return this.name;
+        return this.name;
     }
     getAge() {
-      return this.age;
+        return this.age;
     }
     getWeight() {
-      return this.weight;
+        return this.weight;
     }
     greet() {
-      console.log(`Hello, ${this.name}`);
+        console.log(`Hello, ${this.name}`);
     }
     eat(times) {
-      for (let i = 0; i < times; i++) {
-        this.weight++;
-        this.mood++;
-      }
+        for (let i = 0; i < times; i++) {
+            this.weight++;
+            this.mood++;
+        }
     }
     exercise(times) {
-      for (let i = 0; i < times; i++) {
-        this.weight--;
-      }
+        for (let i = 0; i < times; i++) {
+            this.weight--;
+        }
     }
     ageUp(years) {
-      for (let i = 0; i < years; i++) {
-        this.age++;
-        this.height++;
-        this.weight++;
-        this.mood--;
-        this.bankAccount += 10;
-      }
+        for (let i = 0; i < years; i++) {
+            this.age++;
+            this.height++;
+            this.weight++;
+            this.mood--;
+            this.bankAccount += 10;
+        }
     }
     buyHamster(hamster) {
-      this.hamsters.push(hamster);
-      this.mood += 10;
-      this.bankAccount -= hamster.getPrice();
+        this.hamsters.push(hamster);
+        this.mood += 10;
+        this.bankAccount -= hamster.getPrice();
     }
-  }
-  
+}
+
 
 // 🔴 Hard Mode Save & Commit your work!
 // Your commit message should read something like:
 // "created person class"
 // Easy Mode Keep Going and save and run code
+// Links to an external site.
+
+
+//Create a Story with your Person class
+// Feel free to update or add methods to automate some of these tasks.
+// Instantiate a new Person named Timmy
+// Age Timmy five years
+// At this point Timmy's a little bummed. As a precocious child, he feels he's "seen it all" already. Have him eat five times.
+// Now Timmy's a little heavier than  he wants to be. Kindergarten's coming up and he wants to look good. Have him exercise five times
+// Age Timmy 9 years
+// Create a hamster named "Gus"
+// Set Gus's owner to the string "Timmy"
+// Have Timmy "buy" Gus
+// Age Timmy 15 years
+// Have Timmy eat twice
+// Have Timmy exercise twice
+
+let timmy = new Person("Timmy");
+timmy.ageUp(5);
+timmy.eat(5);
+timmy.exercise(5);
+timmy.ageUp(9);
+
+let gus = new Hamster("Gus");
+gus.owner = "Timmy";
+timmy.buyHamster(gus);
+timmy.ageUp(15);
+timmy.eat(2);
+timmy.exercise(2);
+
+// 🔴 Hard Mode Save & Commit your work!
+// Your commit message should read something like:
+// "created timmys story" Easy Mode Keep Going Save and Run Code
 // Links to an external site.
