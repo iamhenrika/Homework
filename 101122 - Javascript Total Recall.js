@@ -83,7 +83,6 @@
     Change your code so that if the variable animal is anything other than a cow, it will print "Hey! You're not a cow."
     Commit
 
-    const animal = "chicken"
     const animal = "chicken";
         if (animal === "cow") {
             console.log("mooooo");
@@ -200,7 +199,7 @@ III. Arrays & Control flow
             no, not unless they were in subarrays
     
         What real-life thing could you model with an array?
-            grocery list, game scores, book titles
+            lists (grocery, to-do, bills), game scores, book titles
  
  
     B. Easy Does It
@@ -217,7 +216,7 @@ III. Arrays & Control flow
         
         randomThings[0]
 
-    Change the value of "Hello"to "World"
+    Change the value of "Hello" to "World"
 
         randomThings[2] = "World"
 
@@ -239,7 +238,6 @@ D. Change values
 
         ourClass[4] = "Octocat"
         ourClass.push("Cloud City")
- 
  
 E. Mix It Up
     Note: You don't really need .splice()for these. You could use it, but there are simpler array methods that are more appropriate.
@@ -385,7 +383,7 @@ IV. Functions
  
  
     B. printCool
-    Write a function printCool that accepts one parameter, nameas an argument. The function should print the name and a message saying that that person is cool.
+    Write a function printCool that accepts one parameter, name as an argument. The function should print the name and a message saying that that person is cool.
  
     console.log(printCool("Captain Reynolds"));
     => "Captain Reynolds is cool";
@@ -397,7 +395,7 @@ IV. Functions
 
 
     C. calculateCube
-    Write a function calculateCubethat takes a single number and prints the volume of a cube made from that number.
+    Write a function calculateCube that takes a single number and prints the volume of a cube made from that number.
  
     console.log(calculateCube(5));
     => 125
@@ -408,7 +406,7 @@ IV. Functions
             console.log(calculateCube(5))
  
     D. isVowel
-    Write a function isVowelthat takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case. Test your function on every vowel and make sure it's working. In general, when you write functions, take a minute to test them with different values to make sure they behave the way you want.
+    Write a function isVowel that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case. Test your function on every vowel and make sure it's working. In general, when you write functions, take a minute to test them with different values to make sure they behave the way you want.
  
     console.log(isVowel("a"));
     => true
@@ -423,7 +421,7 @@ IV. Functions
         console.log(isVowel('f'))
 
     E. getTwoLengths
-    Write a function getTwoLengthsthat accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
+    Write a function getTwoLengths that accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.
  
     console.log(getTwoLengths("Hank", "Hippopopalous"));
     => [4, 13]
@@ -447,7 +445,7 @@ IV. Functions
         console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]))
  
     G. maxOfThree
-    Define a function maxOfThreethat takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned. Be sure to test it with larger values in each of the three locations.
+    Define a function maxOfThree that takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned. Be sure to test it with larger values in each of the three locations.
     
     console.log(maxOfThree(6, 9, 1));
     => 9
@@ -578,7 +576,7 @@ IV. Functions
         updateUser();
         console.log(user);
 
-    Write a function oldAndLoudthat performs the exact same tasks as updateUser, but instead of hard-coding it to only work on our userobject, make it take a parameter person, and have it modify the object that is passed in as an argument when the function is called. Call your oldAndLoudfunction with useras the argument.
+    Write a function oldAndLoud that performs the exact same tasks as updateUser, but instead of hard-coding it to only work on our userobject, make it take a parameter person, and have it modify the object that is passed in as an argument when the function is called. Call your oldAndLoudfunction with useras the argument.
  
         const oldAndLoud = person =>{
             person.age++
