@@ -1,23 +1,24 @@
+// Menu data structure
 var menuLinks = [
-    { text: 'about', href: '/about' },
+    { text: 'About', href: '/about' },
     {
-        text: 'catalog', href: '#', subLinks: [
-            { text: 'all', href: '/catalog/all' },
-            { text: 'top selling', href: '/catalog/top' },
-            { text: 'search', href: '/catalog/search' },
+        text: 'Catalog', href: '#', subLinks: [
+            { text: 'All', href: '/catalog/all' },
+            { text: 'Top Selling', href: '/catalog/top' },
+            { text: 'Search', href: '/catalog/search' },
         ]
     },
     {
-        text: 'orders', href: '#', subLinks: [
-            { text: 'new', href: '/orders/new' },
-            { text: 'pending', href: '/orders/pending' },
-            { text: 'history', href: '/orders/history' },
+        text: 'Orders', href: '#', subLinks: [
+            { text: 'New', href: '/orders/new' },
+            { text: 'Pending', href: '/orders/pending' },
+            { text: 'History', href: '/orders/history' },
         ]
     },
     {
-        text: 'account', href: '#', subLinks: [
-            { text: 'profile', href: '/account/profile' },
-            { text: 'sign out', href: '/account/signout' },
+        text: 'Account', href: '#', subLinks: [
+            { text: 'Profile', href: '/account/profile' },
+            { text: 'Sign Out', href: '/account/signout' },
         ]
     },
 ];
@@ -62,14 +63,6 @@ for (i = 0; i < menuLinks.length; i++) {
 //     i++;
 //     topMenuEl.append(aEl);
 // })
-
-// menuLinks.forEach(function(str) {
-//  const a = document.createElement('a')
-// a.setAttribute ('href', str.href)
-// a.textContent = str.text    
-// topMenuEl.append(a)
-//  console.log(str.text)
-
 
 //Select and cache the <nav id="sub-menu">element in a variable named subMenuEl
 //Set the height subMenuElelement to be 100%.
