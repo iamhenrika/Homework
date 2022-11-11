@@ -288,4 +288,4 @@ const add = (x, y) => x + y;
 
 //❓ Describe what a callback function is in your own words.
 
-// A "callback function" is a function that is passed through another function to be called back at a later time.
+// A "callback function" is a function, used as an argument, that is passed through another function to be called back (or referenced) at a later time.
