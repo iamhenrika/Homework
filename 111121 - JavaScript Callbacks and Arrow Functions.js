@@ -286,4 +286,6 @@ const add = (x, y) => x + y;
 // An "implicit return" within arrow functions is when you only have one line and are returning something. Now becuase there is only task being completed the return article does not need to added. It's implied that you should simply "return" once completed.
 
 
-//❓ Describe what a callback function is in your own 
+//❓ Describe what a callback function is in your own words.
+
+// A "callback function" is a function that is passed through another function to be called back at a later time.
