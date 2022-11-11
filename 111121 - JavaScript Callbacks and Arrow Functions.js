@@ -51,7 +51,7 @@ let result2 = compute(10, 5, subtract);
 
 // ❓ When the add and subtract functions are passed as arguments to the compute function - they are ___ functions.
 
-// They are called a callback function.
+// They are called "callback" functions.
 
 
 
@@ -282,6 +282,8 @@ const add = (x, y) => x + y;
 
 // Review Questions to turn in
 // ❓ In your own words describe what the term "implicit return" means.
+
+// An "implicit return" within arrow functions is when you only have one line and are returning something. Now becuase there is only task being completed the return article does not need to added. It's implied that you should simply "return" once completed.
 
 
 //❓ Describe what a callback function is in your own 
