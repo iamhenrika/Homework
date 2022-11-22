@@ -1,6 +1,6 @@
 const h1 = {
-    color: '#ffffff',
-    backgroundColor: '#a91c49',
+    color: 'darkred',
+    backgroundColor: 'gold',
     padding: '10px'
 };
 
@@ -10,21 +10,20 @@ const React = require("react");
 class Index extends React.Component {
     render() {
         const { pokemon } = this.props;
-
         return (
             <div>
                 <h1 style={h1}>See All The Pokemon!</h1>
                 <nav>
-                    <a href="/pokemon/new">Create New Pokemon</a>
+                    <a href="/pokemon/new">Add a New Pokemon</a>
                 </nav>
                 <ul>
                     {
-                        pokemon.map((figure, i) => {
-                            let figureName = figure.name;
-
+                        pokemon.map((pokemon, i) => {
+                            let figure = pokemon.name;
                             return (
                                 <li key={i}>
-                                    <a href={`/pokemon/${figure._id}`}>
+                                    <a href={`/pokemon/${i}`}>
+                                        {figure.charAt(0).toUpperCase() + figure.slice(1).toLowerCase()}
                                     </a>
                                 </li>
                             )
