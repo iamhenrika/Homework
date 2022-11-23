@@ -11,9 +11,9 @@ class Index extends React.Component {
         const { pokemon } = this.props;
         return (
             <div>
-                <h1 style={h1}>See All The Pokemon!</h1>
+                <h1 style={h1}>Pokedex</h1>
                 <nav>
-                    <a href="/pokemon/new">Add a New Pokemon</a>
+                    <a href="/pokemon/new">Collect 'Em All</a>
                 </nav>
                 <ul>
                     {
