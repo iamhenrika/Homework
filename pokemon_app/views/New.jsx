@@ -1,3 +1,9 @@
+const h1 = {
+    color: 'darkred',
+    backgroundColor: 'gold',
+    padding: '10px'
+};
+
 const React = require('react')
 
 class New extends React.Component {
