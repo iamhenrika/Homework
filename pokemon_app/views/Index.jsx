@@ -4,7 +4,6 @@ const h1 = {
     padding: '10px'
 };
 
-
 const React = require("react");
 
 class Index extends React.Component {
