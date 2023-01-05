@@ -1,5 +1,5 @@
 /*
-Write a function validCardthat takes a number as an argument and returns true for a valid number and false for an invalid number.
+Write a function validCard that takes a number as an argument and returns true for a valid number and false for an invalid number.
 
 validCard(1234567890123456); //should be false
 validCard(4408041234567893); //should be true
@@ -11,18 +11,18 @@ validCard(4222222222222); //should be true
 let card = "";
 
 function validCard(card) {
-  let digits = card.length;
+  let number = card.length;
 
   let sum = 0;
   let second = false;
-  for (let i = digits - 1; i >= 0; i--) {
-    let digit = card[i].charCodeAt() - "0".charCodeAt();
+  for (let i = number - 1; i >= 0; i--) {
+    let digits = card[i].charCodeAt() - "0".charCodeAt();
 
-    if (sum == true) digit = digit * 2;
-    digit += parseInt(digit / 10, 10);
-    digit += digit % 10;
+    if (second == true) digits = digits * 2;
+    sum += parseInt(digits / 10, 10);
+    sum += digits % 10;
 
-    sum = !sum;
+    second = !second;
   }
   return sum % 10 == 0;
 }
